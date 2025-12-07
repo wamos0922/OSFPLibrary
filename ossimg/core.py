@@ -1,7 +1,12 @@
 #Import
 
 #Brightness
-
+def adjust_brightness(img: Image.Image, factor: float) -> Image.Image:
+    if not isinstance(img, Image.Image):
+        raise TypeError("Input must be a PIL Image object.")
+    
+    enhancer = ImageEnhance.Brightness(img)
+    return enhancer.enhance(factor)
 
 #Saturation
 

@@ -29,4 +29,30 @@ def adjust_shadows(img: Image.Image, amount: float) -> Image.Image:
     
     # Apply the custom lookup table to all three RGB channels
     return img.point(lut * 3)
+
 #Manual
+def process_manual_edits(
+    img: Image.Image, 
+    saturation_factor: float, 
+    shadows_amount: float, 
+    brightness_factor: float, 
+    sharpness_factor: float
+) -> Generator[Tuple[str, Image.Image], None, None]:
+
+    current_img = img.copy()
+
+    # Step 1: SATURATION
+    current_img = adjust_saturation(current_img, saturation_factor)
+    yield ("saturation", current_img)
+
+    # Step 2: SHADOWS
+    current_img = adjust_shadows(current_img, shadows_amount)
+    yield ("shadows", current_img)
+
+    # Step 3: BRIGHTNESS
+    current_img = adjust_brightness(current_img, brightness_factor)
+    yield ("brightness", current_img)
+
+    # Step 4: SHARPNESS
+    current_img = adjust_sharpness(current_img, sharpness_factor)
+    yield ("sharpness", current_img)

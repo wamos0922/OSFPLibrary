@@ -3,6 +3,10 @@ from PIL import Image, ImageEnhance
 import math
 from typing import Generator, Tuple
 
+
+def load_image(path: str) -> Image.Image:
+    return Image.open(path)
+
 #Brightness
 
 

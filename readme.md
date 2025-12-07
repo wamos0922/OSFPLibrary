@@ -1,5 +1,7 @@
 IMAGE PREPROCESSING LIBRARY 
 
+
+[![PyPI version](https://badge.fury.io/py/ossimg.svg)](https://pypi.org/project/ossimg/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 
@@ -30,11 +32,16 @@ Predefined Templates (Quick Use)
 
 ## Installations
 
-### Option 1: From GitHub (Recommended)
+### Option 1: From PyPI (Recommended)
+```bash
+pip install ossimg==2.0.0
+```
+
+### Option 2: From GitHub (Recommended)
 ```bash
 pip install git+https://github.com/wamos0922/OSFPLibrary.git
 ```
-### Option 2: From Source (For Development)
+### Option 3: From Source (For Development)
 1. Open your Command Prompt (CMD) and navigate to your preferred working directory
 
 2. Clone the OSFPLibrary repository:

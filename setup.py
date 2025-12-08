@@ -5,7 +5,7 @@ with open("readme.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='ossimg',
-    version='1.0.0',
+    version='2.0.0',
     author='이크완',
     author_email='wamos1910@hanyang.ac.kr',
     description='Image preprocessing library with filters and templates',

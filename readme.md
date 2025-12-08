@@ -1,11 +1,11 @@
-IMAGE PREPROCESSING LIBRARY 
+ossimg : Image Preprocessing Library
 
 
 [![PyPI version](https://badge.fury.io/py/ossimg.svg)](https://pypi.org/project/ossimg/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 
-[Project Status : Still Under Development]
+
 
 This Python library provides a simple, code-based interface for apply various image editing features and predefined templates to pictures.
 
@@ -13,6 +13,8 @@ This Python library provides a simple, code-based interface for apply various im
 
 - [Features](#features)
 - [Installation](#installation)
+- [Requirement](#requirements)
+- [Testing](#testing)
 - [Contributing](#contributing)
 
 ## FEATURES
@@ -45,35 +47,35 @@ pip install git+https://github.com/wamos0922/OSFPLibrary.git
 1. Open your Command Prompt (CMD) and navigate to your preferred working directory
 
 2. Clone the OSFPLibrary repository:
-
+```bash
     git clone https://github.com/wamos0922/OSFPLibrary.git
-
+```
 3. Navigate into the OSFPLibrary directory:
-
+```bash
     cd OSFPLibrary
-
+```
 4. Install the package:
-
+```bash
     pip install -e .
-
+```
 5. Back to working directory:
-
+```bash
     cd ..
-
+```
 6. Clone the OSFPDemo repository:
-
+```bash
     git clone https://github.com/wamos0922/OSFPDemo.git
-
+```
 7. Navigate into the OSFPDemo folder:
-
+```bash
     cd OSFPDemo
-
+```
 8. Run the demo.py file:
-
+```bash
     python demo.py
+```
 
-
-### Requirements
+## Requirements
 
 - Python 3.7 or higher
 - Pillow (PIL) 9.0.0 or higher
